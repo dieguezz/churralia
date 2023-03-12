@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Haciendo churros en Madrid de manera artesanal desde 1997.">
+    <title>Churralia - Churrería tradicional de Madrid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="cta">
+            <a href="https://www.instagram.com/churraliamadrid/" target="_blank"><img class="instagram"
+                    src="./insta-logo.webp" width="24" height="24" alt="instagram"></a>
+        </div>
+        <img class="logo" src="logo.webp" width="188" height="73" alt="Logotipo churralia">
+    </header>
+    <main>
+        <h2>Los churros de siempre, en Madrid</h2>
+        <h3>Cada día elaboramos churros, porras, chocolate y patatas de manera tradicional</h3>
+        <div class="call_us">
+            <span>Haz tu pedido:</span>
+            <a href="tel:915443479" class="phone__link">
+                91 544 34 70
+            </a>
+        </div>
+
+    </main>
+    <footer>
+        <div class="owner"></div>
+        <div class="floor-wrapper"></div>
+    </footer>
+</body>
+<style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    html {
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .call_us {
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        padding: 24px 48px;
+        border-radius: 4px;
+        gap: 14px;
+        margin-top: 14px
+    }
+
+    .cta {
+        z-index: 1;
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    h2,
+    h3 {
+        font-family: 'Satisfy', cursive;
+        text-align: Center;
+        padding: 0 32px;
+    }
+
+    h2 {
+        font-size: 36px;
+        color: #100708
+    }
+
+    h3 {
+        font-size: 24px;
+        color: #4d2327;
+    }
+
+    .phone__link {
+        font-weight: bold;
+        font-family: fangsong;
+        color: #221612;
+        text-decoration: none;
+        font-weight: 24px;
+    }
+
+    .instagram {
+        width: 24px;
+        filter: drop-shadow(1px 1px 4px #0000006b);
+        border-radius: 8px;
+        margin-right: 32px;
+    }
+
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(0deg, rgba(251, 251, 251, 1) 0%, rgba(251, 251, 251, 1) 41%, rgb(229 218 202 / 100%) 100%);
+        background-repeat: no-repeat;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    header {
+        padding: 24px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        object-fit: none;
+        margin-top: 32px;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: 100%;
+        width: 100%;
+        position: relative;
+    }
+
+    .owner {
+        background-image: url(picture.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        height: 720px;
+        max-width: 490px;
+        margin: auto;
+        top: 120px;
+    }
+
+    .floor-wrapper {
+        background-image: url(homepage.webp);
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 160px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .floor {
+        min-height: 100px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .owner {
+        padding: 36px;
+    }
+
+    header {
+        height: 15%
+    }
+
+    main {
+        height: 31%
+    }
+
+    footer {
+        height: 69%
+    }
+
+    @media (max-width: 600px) {
+        body {
+            overflow: auto;
+        }
+
+        header {
+            min-height: 20%
+        }
+
+        .owner {
+            height: 540px;
+        }
+
+        main {
+            height: 43%
+        }
+
+        footer {
+            min-height: 72%;
+        }
+    }
+
+    */
+    /***
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+
+    /*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+    *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+        all: unset;
+        display: revert;
+    }
+
+    /* Preferred box-sizing value */
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    /* Reapply the pointer cursor for anchor tags */
+    a,
+    button {
+        cursor: revert;
+    }
+
+    /* Remove list styles (bullets/numbers) */
+    ol,
+    ul,
+    menu {
+        list-style: none;
+    }
+
+    /* For images to not be able to exceed their container */
+    img {
+        max-inline-size: 100%;
+        max-block-size: 100%;
+    }
+
+    /* removes spacing between cells in tables */
+    table {
+        border-collapse: collapse;
+    }
+
+    /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+    input,
+    textarea {
+        -webkit-user-select: auto;
+    }
+
+    /* revert the 'white-space' property for textarea elements on Safari */
+    textarea {
+        white-space: revert;
+    }
+
+    /* minimum style to allow to style meter element */
+    meter {
+        -webkit-appearance: revert;
+        appearance: revert;
+    }
+
+    /* preformatted text - use only for this feature */
+    :where(pre) {
+        all: revert;
+    }
+
+    /* reset default text opacity of input placeholder */
+    ::placeholder {
+        color: unset;
+    }
+
+    /* remove default dot (•) sign */
+    ::marker {
+        content: initial;
+    }
+
+    /* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+    :where([hidden]) {
+        display: none;
+    }
+
+    /* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+    :where([contenteditable]:not([contenteditable="false"])) {
+        -moz-user-modify: read-write;
+        -webkit-user-modify: read-write;
+        overflow-wrap: break-word;
+        -webkit-line-break: after-white-space;
+        -webkit-user-select: auto;
+    }
+
+    /* apply back the draggable feature - exist only in Chromium and Safari */
+    :where([draggable="true"]) {
+        -webkit-user-drag: element;
+    }
+
+    /* Revert Modal native behavior */
+    :where(dialog:modal) {
+        all: revert;
+    }
+</style>
+
+</html>
